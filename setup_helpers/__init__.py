@@ -4,3 +4,4 @@ from __future__ import absolute_import, print_function
 from .setup_helpers import *
 
 
+__version__ = '0.0.1'
