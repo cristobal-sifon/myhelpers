@@ -2,20 +2,20 @@ from __future__ import absolute_import, print_function
 
 from setuptools import setup
 
-from setup_helpers import *
+from myhelpers.setup_helpers import *
 
 
-_here = os.path.abspath(os.path.dirname(__file__))
+_here = find_location(__file__)
 
 
 setup(
-    name='setup_helpers',
-    version=find_version('setup_helpers/__init__.py'),
-    description='Package installation and setup helpers',
+    name='myhelpers',
+    version=find_version('myhelpers/__init__.py'),
+    description='Custom helpers'
     author='Cristobal Sifon',
     author_email='sifon@astro.princeton.edu',
     long_description=read(os.path.join(_here, 'README.md')),
-    url='https://github.com/cristobal-sifon/setup_helpers',
-    packages=['setup_helpers'],
+    url='https://github.com/cristobal-sifon/myhelpers',
+    packages=['myhelpers'],
     zip_safe=False
     )
