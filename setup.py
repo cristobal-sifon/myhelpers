@@ -11,7 +11,7 @@ _here = find_location(__file__)
 setup(
     name='myhelpers',
     version=find_version('myhelpers/__init__.py'),
-    description='Custom helpers'
+    description='Custom helpers',
     author='Cristobal Sifon',
     author_email='sifon@astro.princeton.edu',
     long_description=read(os.path.join(_here, 'README.md')),

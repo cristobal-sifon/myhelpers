@@ -4,6 +4,10 @@ import os
 import re
 
 
+def find_location(file):
+    return os.path.abspath(os.path.dirname(file))
+
+
 def find_version(filename):
     """Find package version
 
