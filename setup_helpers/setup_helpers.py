@@ -4,6 +4,15 @@ import os
 import re
 
 
+def find_location(file):
+    """Return the absolute location of a file
+
+    Pass the `__file__` object as an argument to this function in order
+    to return the location of that file
+    """
+    return os.path.abspath(os.path.dirname(file))
+
+
 def find_version(filename):
     """Find package version
 
